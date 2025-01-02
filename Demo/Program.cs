@@ -4,6 +4,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Xml.Linq;
 using System.Drawing;
 using System;
+using System.Reflection.Emit;
 
 namespace Demo
 {
@@ -80,6 +81,141 @@ namespace Demo
     //    }
     //}
     #endregion
+
+    // Part 02
+    #region  Q1)Design and implement a Class for the employees in acompany: Employee is identified by an ID, Name, security level, salary, hire dateand Gender.
+
+    //public class Employee
+    //{
+    //    private int id;
+    //    private string name;
+    //    private decimal salary;
+    //    private HiringDate hireDate;
+    //    private Security_Privileges securityLevel;
+    //    private Gender gender;
+
+    //    public int ID
+    //    {
+    //        get => id;
+    //        set => id = value;
+    //    }
+
+    //    public string Name
+    //    {
+    //        get => name;
+    //        set => name = value;
+    //    }
+
+    //    public decimal Salary
+    //    {
+    //        get => salary;
+    //        set => salary = value;
+    //    }
+
+    //    public HiringDate HireDate
+    //    {
+    //        get => hireDate;
+    //        set => hireDate = value;
+    //    }
+
+    //    public Security_Privileges SecurityLevel
+    //    {
+    //        get => securityLevel;
+    //        set => securityLevel = value;
+    //    }
+
+    //    public Gender Gender
+    //    {
+    //        get => gender;
+    //        set => gender = value;
+    //    }
+
+    //    public Employee()
+    //    {
+    //        ID = 1;
+    //        Name = "Default";
+    //        Salary = 0;
+    //        HireDate = new HiringDate();
+    //        SecurityLevel = Security_Privileges.Guest;
+    //        Gender = Gender.Male;
+    //    }
+
+
+    //    public Employee(int id, string name, decimal salary, HiringDate hireDate, Security_Privileges securityLevel, Gender gender)
+    //    {
+    //        ID = id;
+    //        Name = name;
+    //        Salary = salary;
+    //        HireDate = hireDate;
+    //        SecurityLevel = securityLevel;
+    //        Gender = gender;
+    //    }
+
+
+    //    public override string ToString()
+    //    {
+    //        return $"ID: {ID}, Name: {Name}, Salary: {Salary:C}, Hire Date: {HireDate}, Security Level: {SecurityLevel}, Gender: {Gender}";
+    //    }
+    //}
+
+    //public class HiringDate
+    //{
+    //    private int day;
+    //    private int month;
+    //    private int year;
+
+
+    //    public int Day
+    //    {
+    //        get => day;
+    //        set => day = value;
+    //    }
+
+    //    public int Month
+    //    {
+    //        get => month;
+    //        set => month = value;
+    //    }
+
+    //    public int Year
+    //    {
+    //        get => year;
+    //        set => year = value;
+    //    }
+
+
+    //    public HiringDate()
+    //    {
+    //        Day = 1;
+    //        Month = 1;
+    //        Year = 2000;
+    //    }
+
+
+    //    public HiringDate(int day, int month, int year)
+    //    {
+    //        Day = day;
+    //        Month = month;
+    //        Year = year;
+    //    }
+
+    //    public override string ToString()
+    //    {
+    //        return $"{Day:D2}/{Month:D2}/{Year}";
+    //    }
+    //}
+
+    // public enum Gender
+    //{
+    //    Male, Female
+    //}
+    //[Flags]
+    //public enum Security_Privileges:byte
+    //{
+    //    Guest=1, Developer=2, Secretary=4, DBA=8
+    //}
+    #endregion
+
     internal class Program
     {
 
@@ -232,6 +368,21 @@ namespace Demo
             //}
             //Console.WriteLine($"Max age is {people[index].age} for the person {people[index].name}");
             #endregion
+
+            // Part 02
+            #region  Q1)Design and implement a Class for the employees in acompany: Employee is identified by an ID, Name, security level, salary, hire dateand Gender.
+            //Employee[] EmpArr = new Employee[3];
+            //EmpArr[0] = new Employee(1, "Ahmed Mohamed", 20000, new HiringDate(1, 1, 2015), Security_Privileges.DBA, Gender.Male);
+            //EmpArr[1] = new Employee(2, "Mostafa Ahmed", 30000, new HiringDate(15, 8, 2024), Security_Privileges.Guest, Gender.Male);
+            //EmpArr[2] = new Employee(3, "Ayman Nasr", 25000, new HiringDate(1, 1, 2020), (Security_Privileges) 15, Gender.Male);
+
+
+            //foreach (var employee in EmpArr)
+            //{
+            //    Console.WriteLine(employee);
+            //}
+            #endregion
+
         }
 
     }
