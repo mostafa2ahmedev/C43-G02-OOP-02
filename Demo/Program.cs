@@ -34,6 +34,13 @@ namespace Demo
     //Spring=1,Summer,Autumn,Winter
     //}
     #endregion
+
+    #region Q4)Assign the following Permissions (Read, write, Delete, Execute) in a form ofEnum.
+    //[Flags]
+    //enum Permissions : byte { 
+    //Read=1,Write=2,Delete=4,Execute=8
+    //}
+    #endregion
     internal class Program
     {
 
@@ -86,8 +93,28 @@ namespace Demo
             //    default:
             //        Console.WriteLine("This is not a valid month name");
             //        break;
-            }
+
+            #endregion
+
+
+            #region Q4)Assign the following Permissions (Read, write, Delete, Execute) in a form ofEnum.
+            //Permissions permission = (Permissions)1;
+            //Console.WriteLine(permission);
+            //// Add new permission
+            //permission = permission | Permissions.Write;
+            //Console.WriteLine(permission);
+            //// Remove permission
+            //permission = permission & ~(Permissions.Read);
+            //Console.WriteLine(permission);
+            //// Toggle permission
+            //permission = permission ^ Permissions.Read;
+            //Console.WriteLine(permission); 
+            //permission = permission ^ Permissions.Read;
+            //Console.WriteLine(permission);
             #endregion
         }
+
     }
+
+
 }
