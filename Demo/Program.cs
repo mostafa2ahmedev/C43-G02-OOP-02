@@ -3,6 +3,7 @@ using System.Threading;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Xml.Linq;
 using System.Drawing;
+using System;
 
 namespace Demo
 {
@@ -58,12 +59,24 @@ namespace Demo
     //    public Point(int x, int y) { 
     //    this.x=x; 
     //    this.y = y;
-        
+
     //    }
 
     //    public void GetDistance(Point p) {
 
     //        Console.WriteLine($"Distance is {(this.y-p.y)/(this.x-p.x)}");
+    //    }
+    //}
+    #endregion
+
+    #region Q7)Create a struct called "Person" with properties "Name" and "Age". Write a C# program that takes details of 3 persons as input from the user and displays the name and age of the oldest person.
+    //public struct Person {
+    //   public string name;
+    //   public int age;
+
+    //    public Person(string name, int age) {
+    //        this.name = name;
+    //        this.age = age;
     //    }
     //}
     #endregion
@@ -168,7 +181,7 @@ namespace Demo
 
             #region Q6)Create a struct called "Point" to represent a 2D point with properties "X" and"Y".Write a C# program that takes two points as input from the user and calculates the distance between them.
 
-           
+
             //Point[] points = new Point[2];
             //bool fflag = false;
             //bool sflag = false;
@@ -194,9 +207,34 @@ namespace Demo
 
             #endregion
 
+
+            #region Q7)Create a struct called "Person" with properties "Name" and "Age". Write a C# program that takes details of 3 persons as input from the user and displays the name and age of the oldest person.
+            //Person[] people = new Person[3];
+            //bool flag = false;
+            //for (int i = 0; i < people.Length; i++)
+            //{
+            //    Console.Write($"Enter the name for Person Number {i + 1} : ");
+            //    people[i].name =Console.ReadLine()?? "No Name";
+            //    do
+            //    {
+            //        Console.Write($"Enter the age for Person Number {i + 1} : ");
+            //        flag = int.TryParse(Console.ReadLine(),out people[i].age);
+            //    }
+            //    while (!flag);
+            //}
+            //int maxAge = people[0].age;
+            //int index=0;
+            //for (int i = 0; i < people.Length; i++)
+            //{
+            //    if (people[i].age > maxAge) {
+            //        index = i;
+            //            }   
+            //}
+            //Console.WriteLine($"Max age is {people[index].age} for the person {people[index].name}");
+            #endregion
         }
 
-        }
+    }
 
 
     }
