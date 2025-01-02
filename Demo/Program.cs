@@ -49,6 +49,24 @@ namespace Demo
     //    Red=1, Green, Blue
     //}
     #endregion
+
+
+    #region Q6)Create a struct called "Point" to represent a 2D point with properties "X" and"Y".Write a C# program that takes two points as input from the user and calculates the distance between them.
+    //public struct Point {
+    //    int x;
+    //    int y;
+    //    public Point(int x, int y) { 
+    //    this.x=x; 
+    //    this.y = y;
+        
+    //    }
+
+    //    public void GetDistance(Point p) {
+
+    //        Console.WriteLine($"Distance is {(this.y-p.y)/(this.x-p.x)}");
+    //    }
+    //}
+    #endregion
     internal class Program
     {
 
@@ -146,13 +164,39 @@ namespace Demo
             //    default:
             //        Console.WriteLine("Not A Primary Color");
             //        break;
-                    #endregion
+            #endregion
+
+            #region Q6)Create a struct called "Point" to represent a 2D point with properties "X" and"Y".Write a C# program that takes two points as input from the user and calculates the distance between them.
+
            
-        
+            //Point[] points = new Point[2];
+            //bool fflag = false;
+            //bool sflag = false;
+            //for (int i = 0; i < points.Length;)
+            //{
+
+            //    do
+            //    {
+            //        Console.WriteLine($"Enter x for point {i + 1}");
+            //        fflag = int.TryParse(Console.ReadLine(), out int x);
+            //    }
+            //    while (!fflag);
+            //    do
+            //    {
+            //        Console.WriteLine($"Enter y for point {i + 1}");
+            //        sflag = int.TryParse(Console.ReadLine(), out int y);
+            //    }
+            //    while (!sflag);
+
+
+            //}
+            //points[1].GetDistance(points[0]);
+
+            #endregion
+
         }
 
         }
 
 
     }
-}
