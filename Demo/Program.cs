@@ -2,6 +2,7 @@
 using System.Threading;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using System.Xml.Linq;
+using System.Drawing;
 
 namespace Demo
 {
@@ -39,6 +40,13 @@ namespace Demo
     //[Flags]
     //enum Permissions : byte { 
     //Read=1,Write=2,Delete=4,Execute=8
+    //}
+    #endregion
+
+    #region Q5)Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members.Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
+    //enum Colors
+    //{
+    //    Red=1, Green, Blue
     //}
     #endregion
     internal class Program
@@ -112,9 +120,39 @@ namespace Demo
             //permission = permission ^ Permissions.Read;
             //Console.WriteLine(permission);
             #endregion
+
+            #region Q5)Create an enum called "Colors" with the basic colors (Red, Green, Blue) as its members.Write a C# program that takes a color name as input from the user and displays a message indicating whether the input color is a primary color or not.
+            //string userInput;
+            //do
+            //{
+            //    Console.WriteLine("Enter a Color");
+            //    userInput = Console.ReadLine();
+            //}
+            //while (userInput == "");
+            //Colors color;
+            //Enum.TryParse<Colors>(userInput, true, out color);
+            //switch (color)
+            //{
+            //    case Colors.Red:
+            //        goto case Colors.Blue;
+
+            //    case Colors.Green:
+
+            //        goto case Colors.Blue;
+            //    case Colors.Blue:
+            //        Console.WriteLine("Primary Color");
+            //        break;
+
+            //    default:
+            //        Console.WriteLine("Not A Primary Color");
+            //        break;
+                    #endregion
+           
+        
         }
 
+        }
+
+
     }
-
-
 }
